@@ -1,0 +1,40 @@
+What would be the output of the following program?
+
+#include <stdio.h>
+
+void main(){
+
+int a=0;
+
+a=2&&2|1;
+
+printf("%d",a);
+
+}
+
+// Logical AND and bitwise OR operations
+
+2 && 2 🡺 \
+
+Logical AND (&&): In C, the logical AND operator returns 1 (true) if both operands are non-zero.
+
+Since both 2 and 2 are non-zero, 2 && 2 evaluates to 1.
+
+2 | 1 🡺
+
+Bitwise OR (|): The bitwise OR operator compares each bit of the operands.
+
+2 in binary is 0010, and 1 in binary is 0001.
+
+Performing 2 | 1 results in 0011, which is 3 in decimal.
+
+🡺 The Full Expression: a = 2 && 2 | 1
+
+Operator precedence: The logical AND (&&) has higher precedence than the bitwise OR (|), so 2 && 2 is
+evaluated first.
+
+2 && 2 results in 1, so the expression becomes 1 | 1.
+
+Now, perform the bitwise OR: 1 | 1 results in 1 (since 1 | 1 is 1 in binary).
+
+Final Result: The value of a is 1.

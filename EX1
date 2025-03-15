@@ -1,0 +1,42 @@
+Write a code to print the following pattern.
+
+* * * * *
+
+* * * * *
+
+* * * * *
+
+* * * * *
+
+* * * * *
+SOLUTION
+
+
+#include <stdio.h>
+
+int main() {
+
+int i, j; // Declare two integer variables for loop control
+
+// Outer loop to control the number of rows (5 rows in total)
+
+for(i = 1; i <= 5; i++) {
+
+// Inner loop to control the number of stars printed in each row
+
+// This loop runs 5 times for each row, printing 5 stars per row
+
+for(j = 1; j <= 5; j++) {
+
+printf("* "); // Print a star followed by a space
+
+}
+
+// After printing 5 stars, move to the next line
+
+printf("\n");
+
+}
+
+return 0; }
+// End of the program, return 0 indicating successful execution
